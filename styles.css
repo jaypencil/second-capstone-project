@@ -142,6 +142,9 @@ label input{
     border-bottom:  1px solid #8AD0A8;
     width: 100%;
 }
+.input-height {
+    height: 40px;
+}
 button{
     margin: auto;
     display: block;
@@ -153,6 +156,14 @@ button{
     text-transform: capitalize;
     background-color: #8AD0A8;
     font-size: 1rem;
+}
+button:hover{
+    background-color: #8AD0A8;
+    opacity: .5;
+}
+button span:hover{
+    color: #060F0A;
+    opacity: .7;
 }
 @media  (max-width : 800px){
     section{
