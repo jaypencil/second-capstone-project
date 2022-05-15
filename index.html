@@ -14,6 +14,16 @@
                 $("ul").toggleClass('show')
             })
         })
+        $(".toggle-password").click(function() {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
     </script>
 </head>
 <body>
@@ -44,15 +54,15 @@
                  <form>
                      <label for="username">
                          USERNAME: <br> <br>
-                         <input type="text" id="username" name="username" placeholder="JOHN DOE">
+                         <input class="input-height" type="text" id="username" name="username" placeholder="JOHN DOE">
                      </label> <br> <br>
                      <label for="email">
                          E-MAIL ADDRESS: <br> <br>
-                         <input type="email" id="email" name="email" placeholder="adegboye.tosin.r@gmail.com">
+                         <input class="input-height" type="email" id="email" name="email" placeholder="adegboye.tosin.r@gmail.com">
                      </label> <br> <br>
                      <label for="phonenumber">
                         PHONE NUMBER: <br> <br>
-                        <input type="text" id="phonenumber" name="phonenumber" placeholder="+234**********">
+                        <input class="input-height" type="text" id="phonenumber" name="phonenumber" placeholder="+234**********">
                     </label> <br> <br>
                     <h3>What`s Your Gender?</h3> <br>
                     <label for="female">
@@ -65,11 +75,12 @@
                     </label> <br> <br>
                      <label for="password">
                          Password: <br> <br>
-                         <input type="password" id="password" name="password" placeholder="password">
+                         <input class="input-height form-control" type="password" id="myInput" name="password" placeholder="password" value="">
+                         <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                      </label> <br> 
                  </form>
                  <input type="checkbox"> <span>I agree all terms</span> <br> <br>
-                 <button type="button">sign up</button> <br>
+                 <button type="button"><span>sign up</span></button> <br>
                  <span>I am already a member</span>
             </div>
         </div> 
