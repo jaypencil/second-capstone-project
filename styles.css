@@ -141,6 +141,7 @@ label input{
     border: none;
     border-bottom:  1px solid #8AD0A8;
     width: 100%;
+    color: #fff;
 }
 .input-height {
     height: 40px;
